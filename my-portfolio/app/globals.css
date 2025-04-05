@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+
+.body{
+    font-family: "Roboto", sans-serif;
+    color: "#777777";
+    font-size: 15px;
+}
