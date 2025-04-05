@@ -21,6 +21,13 @@ export default function Home() {
 
       {/* About Me  */}
       <section id="about">
+          <div className="block md:hidden"> 
+            <h2 className="text-3xl font-bold text-center mb-4 mt-10">About Me</h2>
+            <p className="text-center text-[#777777] mb-8">
+              I am a dedicated professional who thrives on turning ideas into reality through code. 🌟
+            </p>
+          </div>
+
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center">
           <div className="md:flex-row items-center">
             <img src="images/about-us.png" alt="About Me" className="h-auto" />

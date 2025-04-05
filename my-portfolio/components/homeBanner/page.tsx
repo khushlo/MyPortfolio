@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HomeBanner() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="flex md:min-h-screen flex-col items-center justify-between m-5">
       <div className="flex flex-col md:flex-row items-center justify-between w-full">
         <div className="w-full md:w-[60%] h-[100vh] hidden md:block">
           <div
