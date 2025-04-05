@@ -1,5 +1,6 @@
 import Footer from "@/components/footer/page";
 import Navbar from "../components/navbar/page";
+import HomeBanner from "../components/homeBanner/page";
 import React from "react";
 
 export default function Home() {
@@ -14,42 +15,31 @@ export default function Home() {
           zIndex: 1000,
         }}
       />
-      <main className="flex min-h-screen flex-col items-center justify-between">
-        <div className="flex flex-col md:flex-row items-center justify-between w-full">
-          <div className="w-full md:w-[60%] h-[100vh]">
-            <div
-              className="flex items-center justify-start w-full h-full flex-col"
-              style={{
-                backgroundImage: `url('/images/banner1.png')`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            >
-              <h1 className="text-5xl font-bold text-black mt-[20%]">
-                Hello <hr className="w-3/4 border-t-2 border-gray-300 mt-2" />
-                I'm Khushal Patel
-              </h1>
-            </div>
-          </div>
-
-          <div className="mt-4 text-center hidden md:block">
-            <img src="/images/home-right.png" alt="Khushal Patel" />
-          </div>
-        </div>
-      </main>
+      
+      {/* Home Banner  */}
+      <HomeBanner />
 
       {/* About Me  */}
-      <section id="about" className="bg-gray-100 p-8">
-        <h2 className="text-3xl font-bold">About Me</h2>
-        <p className="mt-4">
-          I am a web developer with a passion for creating beautiful and
-          functional websites.
-        </p>
-        <p className="mt-4">
-          I love learning new technologies and improving my skills. 
-          I am currently focused on building responsive and user-friendly web
-          applications using React and Next.js.
-        </p>
+      <section id="about">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-center">
+          <div className="md:flex-row items-center">
+            <img src="images/about-us.png" alt="About Me" className="h-auto" />
+          </div>
+
+          <div className="flex flex-col items-center justify-center md:w-1/3 p-4">
+            <div>
+              <h2 className="text-3xl font-bold text-left mb-4">let’s Introduce about myself</h2>
+                <p className=" text-[#777777] text-left">
+                I am a passionate software developer with experience in building web applications. 
+                I specialize in creating responsive and user-friendly interfaces using modern web technologies.
+                </p><br></br>
+                <p className=" text-[#777777] text-left">
+                I love learning new technologies, improving my skills, and collaborating with others to solve challenging problems. 
+                My goal is to deliver high-quality software that makes a positive impact.
+                </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Footer  */}
