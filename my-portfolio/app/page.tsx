@@ -46,7 +46,9 @@ export default function Home() {
           functional websites.
         </p>
         <p className="mt-4">
-          I love learning new technologies and improving my skills.
+          I love learning new technologies and improving my skills. 
+          I am currently focused on building responsive and user-friendly web
+          applications using React and Next.js.
         </p>
       </section>
 
